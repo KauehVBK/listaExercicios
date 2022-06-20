@@ -24,11 +24,11 @@ public class ex1 {
 
             System.out.println("========= Resultados ========="); 
             
-            System.out.println("Digite a altura: " + h); 
+            System.out.println("Altura: " + h); 
             
-            System.out.println("Digite a base maior: " + bMenor); 
+            System.out.println("Base maior: " + bMenor); 
             
-            System.out.println("Digite a base menor: " + bMaior); 
+            System.out.println("Base menor: " + bMaior); 
            
             System.out.println("A area é: " + area); 
         }
