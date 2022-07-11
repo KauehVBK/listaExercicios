@@ -1,16 +1,16 @@
-public class ex5 {
-    public static void main(String[] args) {
-        long somaIm = 0, multPa = 1;
-        
-        for (int i = 1; i <= 30; i++){
-            if (i % 2 == 1){
-                somaIm += i;
-            }
-            else {
-                multPa *= i;
-            }
-        }
-        System.out.println("Resultado soma: " + somaIm);
-        System.out.println("Resultado multiplicação: " + multPa);
+public class primos {
+    public static void main(String[] args) {    
+        for (int x = 2; x <= 123; x++) {
+            if( checkPrimo(x) )
+                System.out.println(x + " -> primo");
+        }    
     }
-}    
+ 
+    private static boolean checkPrimo(int numero) {
+        for (int i = 2; i < numero; i++) {
+            if (numero % i == 0)
+                return false;   
+        }
+        return true;
+    }
+}
